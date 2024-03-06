@@ -62,4 +62,17 @@ describe("Register functional test", () => {
       });
     });
   });
+
+  it.only("Should search user by incorrect id", () => {
+    const fakeId = faker.number.bigInt();
+
+    cy.api({
+      method: "GET",
+      url: Cypress.config("baseUrl") + `/usuarios/${fakeId}`,
+      failOnStatusCode: false,
+    }).then((response) => {
+      expect(response.status).to.equal(400);
+      expect(response.body.message).to.eq("Usuário não encontrado");
+    });
+  });
 });
