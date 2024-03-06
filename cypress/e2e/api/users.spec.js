@@ -63,7 +63,7 @@ describe("Register functional test", () => {
     });
   });
 
-  it.only("Should search user by incorrect id", () => {
+  it("Should search user by incorrect id", () => {
     const fakeId = faker.number.bigInt();
 
     cy.api({
