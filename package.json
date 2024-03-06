@@ -1,0 +1,28 @@
+{
+  "name": "cypress-qa-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "npx cypress open",
+    "cy:test": "npx cypress run --spec",
+    "cy:tests": "npx cypress run"
+  },
+  "keywords": [
+    "e2e",
+    "automation",
+    "framework",
+    "cypress",
+    "api"
+  ],
+  "author": "Jason Willyan",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress-audit/lighthouse": "^1.4.2",
+    "@faker-js/faker": "^8.4.1",
+    "cypress": "^13.6.6"
+  },
+  "dependencies": {
+    "cypress-plugin-api": "^2.11.1"
+  }
+}
