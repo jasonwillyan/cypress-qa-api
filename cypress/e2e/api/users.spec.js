@@ -45,7 +45,7 @@ describe("Register functional test", () => {
     });
   });
 
-  it.only("Should search user by id", () => {
+  it("Should search user by id", () => {
     cy.getUserId().then((data) => {
       cy.api({
         method: "GET",
