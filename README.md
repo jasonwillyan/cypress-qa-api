@@ -57,10 +57,10 @@ npm run cy:test "root/folder/file.spec.js"
 
 The login API test is performed using the Cypress framework and the `cy.api()` method provided by the `cypress-plugin-api` plugin. Below is an example test scenario for viewing request information in the Cypress UI:
 
-![Login API Test](cypress/images/login-api.png)
+![Login API Test](images/login-api.png)
 
 ### Lighthouse Evaluation Test
 
 In addition to API tests, the project also includes tests to evaluate Lighthouse metrics on a website. These tests are performed using the `@cypress-audit/lighthouse` plugin and evaluate Performance, SEO, Best Practices, and Accessibility metrics.
 
-![Lighthouse Evaluation Test](cypress/images/lighthouse-audit.png)
+![Lighthouse Evaluation Test](images/lighthouse-audit.png)
